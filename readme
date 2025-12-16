@@ -1,0 +1,28 @@
+1. What is React and why is it used?
+
+React is an open source javascript Library for building user Interface.Developed and maintained by meta. widely used for creating dynamic, singlePage application.
+
+Use React for building complex, interactive user interfaces efficiently.
+or building complex, interactive user interfaces efficiently.
+
+2. Difference between props and state
+Props :
+- They are read-only inputs passed from a parent component to a child component.
+- Controlled by the parent component.
+-Used to pass data from parent to child.
+
+state:
+ - Local data managed inside a component. It can change over time.
+ - Controlled within the component itself
+ -Used to track and manage data that can change.
+
+3. What is useState?
+useState is a React Hook that allows to add state to functional components. 
+Use to  store and manage data that can change over time in a component
+
+
+4. What is JSX?
+JSX is a syntax extension for JavaScript that allows you to write HTML like code inside JavaScript. it makes UI code more readable and declarative
+
+5. What is the virtual DOM?
+The Virtual DOM is a lightweight copy of the actual DOM (Document Object Model) that React keeps in memory. It allows react to update the UI efficiently without re-rendering the entire page.
