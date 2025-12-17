@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const AddUserForm = ({ onAddUser }) => {
+const AddUserForm = () => {
   const [users, setUsers] = useState([]);
  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -34,11 +34,11 @@ const AddUserForm = ({ onAddUser }) => {
     fetchUsers();
   }, []);
 
-  // 🔹 Form validation
+  
   const isFormValid =
     name.trim() !== "" && email.includes("@");
 
-  // 🔹 Submit handler
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isFormValid) return;
@@ -49,7 +49,7 @@ const AddUserForm = ({ onAddUser }) => {
       email,
     };
 
-    // Add user locally
+    
     setUsers((prev) => [newUser, ...prev]);
 
     // Clear form
